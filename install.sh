@@ -79,6 +79,7 @@ echo "Setting Bluetooth"
 yay -S blueman --noconfirm
 yay -S bluez --noconfirm
 yay -S bluez-utils --noconfirm 
+yay -Syyuu bluedevil bluez-utils pulseaudio-bluetooth --noconfirm
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 echo "Bluetooth setup done"

@@ -1,5 +1,0 @@
-[PlasmaRunnerManager]
-LaunchCounts=1 krunner_systemsettings_kcm_keys,1 appstream_io.elementary.shortcut-overlay,7 exec:///usr/bin/konsole,1 exec:///usr/bin/systemsettings,1 exec:///usr/lib/firefox/firefox,1 desktopsessions_1,2 exec:///usr/bin/brave
-
-[PlasmaRunnerManager][History]
-d8f5d564-b5d2-4b82-be9c-de6584140ed0=brave,settings,shortcut,short,konso,logout,firefo
