@@ -24,10 +24,8 @@ sudo git clone --quiet https://aur.archlinux.org/yay-git.git > /dev/null
 sudo chown -R $username:$username ./yay-git
 cd yay-git
 echo "running installer"
-{
-    makepkg -si --noconfirm > /dev/null
-    sudo yay -Syu > /dev/null
-} &> /dev/null
+makepkg -si --noconfirm > /dev/null
+sudo yay -Syu > /dev/null
 echo "Installed yay"
 # --------------------------------------------
 
@@ -59,8 +57,11 @@ echo "Installing scripts"
 # --------------------------------------------
 cd $currentDir
 echo "getting gg-dev-05's scripts and dotfiles"
+echo ".dotfiles"
 git clone --quiet https://github.com/gg-dev-05/.dotfiles.git > /dev/null
+echo "scripts"
 git clone --quiet https://github.com/gg-dev-05/scripts.git > /dev/null
+echo "installer"
 git clone --quiet https://github.com/gg-dev-05/installer.git > /dev/null
 cp "$currentDir"/.dotfiles/zsh/.zshrc ~/
 cp "$currentDir"/.dotfiles/zsh/.p10k.zsh ~/
