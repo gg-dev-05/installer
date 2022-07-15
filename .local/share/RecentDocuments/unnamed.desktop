@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=plasmadiscover
+Name=
+Type=Link
+URL[$e]=appstream://io.elementary.shortcut-overlay
+X-KDE-LastOpenedWith=org.kde.discover.urlhandler
