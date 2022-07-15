@@ -16,16 +16,16 @@ sudo pacman -Syy
 # Install yay
 # --------------------------------------------
 echo "Installing yay"
-sudo pacman -S --needed base-devel --noconfirm > /dev/null
-sudo pacman -S git --noconfirm > /dev/null
+sudo pacman -S --needed base-devel --noconfirm
+sudo pacman -S git --noconfirm
 cd /opt
 sudo rm -rf yay-git
-sudo git clone --quiet https://aur.archlinux.org/yay-git.git > /dev/null
+sudo git clone --quiet https://aur.archlinux.org/yay-git.git
 sudo chown -R $username:$username ./yay-git
 cd yay-git
 echo "running installer"
 makepkg -si --noconfirm
-sudo yay -Syu > /dev/null
+yay -Syu
 echo "Installed yay"
 # --------------------------------------------
 
@@ -33,7 +33,7 @@ echo "Installed yay"
 # Install brave
 # --------------------------------------------
 echo "Installing Brave"
-yay -S aur/brave-bin --noconfirm > /dev/null
+yay -S aur/brave-bin --noconfirm
 echo "Installed Brave"
 # --------------------------------------------
 
@@ -41,7 +41,8 @@ echo "Installed Brave"
 # Install ZSH
 # --------------------------------------------
 echo "Installing zsh"
-yay -S zsh --noconfirm > /dev/null
+yay -S zsh --noconfirm
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended # install oh-my-zsh
 echo "getting zsh theme"
 git clone --quiet --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k > /dev/null
@@ -75,9 +76,9 @@ echo "Shortcuts and themes added"
 # Install Blueman
 # --------------------------------------------
 echo "Setting Bluetooth"
-yay -S blueman --noconfirm > /dev/null
-yay -S bluez
-yay -S bluez-utils
+yay -S blueman --noconfirm
+yay -S bluez --noconfirm
+yay -S bluez-utils --noconfirm 
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 echo "Bluetooth setup done"
