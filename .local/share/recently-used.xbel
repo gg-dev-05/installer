@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0" xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info">  <bookmark href="appstream://io.elementary.shortcut-overlay" added="2022-07-15T14:14:13.690000Z" modified="2022-07-15T14:14:13.690000Z" visited="2022-07-15T14:14:13.690000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.discover.urlhandler" exec="plasma-discover %U %u" modified="2022-07-15T14:14:13.690000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="http://google.com" added="2022-07-15T14:15:30.742000Z" modified="2022-07-15T14:15:30.742000Z" visited="2022-07-15T14:15:30.742000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="firefox" exec="/usr/lib/firefox/firefox %u %u" modified="2022-07-15T14:15:30.742000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ggdv05/.local/share/kactivitymanagerd/resources/errors.log" added="2022-07-15T14:27:50.145000Z" modified="2022-07-15T14:27:50.145000Z" visited="2022-07-15T14:27:50.145000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-log"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %U %u" modified="2022-07-15T14:27:50.145000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ggdv05/.config/fontconfig/fonts.conf" added="2022-07-15T15:01:19.211000Z" modified="2022-07-15T15:01:19.211000Z" visited="2022-07-15T15:01:19.211000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/xml"/>
+        <bookmark:applications>
+          <bookmark:application name="firefox" exec="/usr/lib/firefox/firefox %u %u" modified="2022-07-15T15:01:19.211000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ggdv05/.config/gtk-4.0/settings.ini" added="2022-07-15T15:01:32.929000Z" modified="2022-07-15T15:01:32.929000Z" visited="2022-07-15T15:01:32.929000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %U %u" modified="2022-07-15T15:01:32.929000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ggdv05/.config/kde.org/UserFeedback.org.kde.discover.conf" added="2022-07-15T15:01:39.046000Z" modified="2022-07-15T15:01:39.046000Z" visited="2022-07-15T15:01:39.046000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %U %u" modified="2022-07-15T15:01:39.046000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ggdv05/.config/kwinrulesrc" added="2022-07-15T15:02:00.059000Z" modified="2022-07-15T15:02:00.059000Z" visited="2022-07-15T15:02:00.059000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %U %u" modified="2022-07-15T15:02:00.059000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
