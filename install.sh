@@ -24,7 +24,7 @@ sudo git clone --quiet https://aur.archlinux.org/yay-git.git > /dev/null
 sudo chown -R $username:$username ./yay-git
 cd yay-git
 echo "running installer"
-makepkg -si --noconfirm > /dev/null
+makepkg -si --noconfirm
 sudo yay -Syu > /dev/null
 echo "Installed yay"
 # --------------------------------------------
@@ -72,6 +72,18 @@ echo "Shortcuts and themes added"
 # --------------------------------------------
 
 
+# Install Blueman
+# --------------------------------------------
+echo "Setting Bluetooth"
+yay -S blueman --noconfirm > /dev/null
+yay -S bluez
+yay -S bluez-utils
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+echo "Bluetooth setup done"
+# --------------------------------------------
+
+
 # Install vs code
 echo "Installing vscode"
 yay -S visual-studio-code-bin --noconfirm > /dev/null
@@ -81,5 +93,6 @@ echo "Installed vscode"
 # echo "change your default shell by running:"
 # echo "chsh -s $(which zsh)"
 chsh -s $(which zsh)
-echo "Reboot Please :)"
+echo "Rebooting :)"
+sleep 5
 sudo reboot now
