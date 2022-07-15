@@ -61,9 +61,13 @@ cd $currentDir
 echo "getting gg-dev-05's scripts and dotfiles"
 git clone --quiet https://github.com/gg-dev-05/.dotfiles.git > /dev/null
 git clone --quiet https://github.com/gg-dev-05/scripts.git > /dev/null
+git clone --quiet https://github.com/gg-dev-05/installer.git > /dev/null
 cp "$currentDir"/.dotfiles/zsh/.zshrc ~/
 cp "$currentDir"/.dotfiles/zsh/.p10k.zsh ~/
 echo "zsh theming done"
+cp -r "$currentDir"/installer/.local ~/
+cp -r "$currentDir"/installer/.config ~/
+echo "Shortcuts and themes added"
 # --------------------------------------------
 
 
@@ -73,6 +77,8 @@ yay -S visual-studio-code-bin --noconfirm > /dev/null
 echo "Installed vscode"
 
 # Change default shell
-echo "change your default shell by running:"
-echo "chsh -s $(which zsh)"
-echo "BYE."
+# echo "change your default shell by running:"
+# echo "chsh -s $(which zsh)"
+chsh -s $(which zsh)
+echo "Reboot Please :)"
+sudo reboot now
