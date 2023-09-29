@@ -34,6 +34,7 @@ echo "Installed yay"
 # --------------------------------------------
 echo "Installing Brave"
 yay -S aur/brave-bin --noconfirm
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts
 echo "Installed Brave"
 # --------------------------------------------
 
